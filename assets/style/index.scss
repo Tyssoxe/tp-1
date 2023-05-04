@@ -3,62 +3,9 @@
 @import 'lib/font-awesome';
 @import 'base/button';
 @import 'base/text';
-
-
-.aleatoire{
-    img{
-        height: 100%;
-        width: 100%;
-    }
-    margin-bottom: 50px;
-}
-
-.bac{
-    background-color: aqua;
-    position: relative;
-    margin-bottom: 50px;
-    img{
-        position: absolute;
-        width: 300px;
-        height: 300px;
-        left: 1082px;
-        top: -80px;
-    }
-}
-
-.soa{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
-.soi{
-    img{
-        width: 100%;
-        height: 100%;
-    }
-}
-.s{
-    width: 100%;
-    justify-content: center;
-}
-
-.sa{
-    img{
-        height: 583px;
-    }
-}
-
-.saer{
-    justify-content: center;
-}
-
-.form{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
+@import 'base/Titre';
+@import 'Bloc/bloc1';
+@import'Bloc/bloc2.scss';
+@import'Bloc/bloc3.scss';
+@import'Bloc/nav.scss';
+@import'Bloc/footer.scss';

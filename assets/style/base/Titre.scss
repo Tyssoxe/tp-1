@@ -1,0 +1,16 @@
+h1, h2{
+    font-size: 50px;
+    font-style: italic;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 320px) {
+    h1, h2{
+        font-size: 25px;
+        font-style: italic;
+    }
+  }
+.vert{
+    color:rgba(178, 193, 154, 1);
+}

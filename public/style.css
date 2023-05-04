@@ -21023,11 +21023,55 @@ readers do not read off random characters that represent icons */
   border-radius: 8px;
 }
 
-h1, .h1 {
-  font-size: 5rem;
+h1, .h1, h2, .h2 {
+  font-size: 50px;
   font-style: italic;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
+@media screen and (max-width: 320px) {
+  h1, .h1, h2, .h2 {
+    font-size: 25px;
+    font-style: italic;
+  }
+}
+.vert {
+  color: rgb(178, 193, 154);
+}
+
+.bloc1 {
+  display: flex;
+  justify-content: center;
+}
+
+.bloc2 {
+  background-color: rgb(91, 85, 79);
+  position: relative;
+  margin-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.bloc2 p {
+  color: aliceblue;
+}
+.bloc2 img {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 1082px;
+  top: -50px;
+}
+
+@media screen and (max-width: 320px) {
+  .bloc2 {
+    background-color: aqua;
+    position: relative;
+  }
+  .bloc2 img {
+    display: none;
+  }
+}
 .aleatoire {
   margin-bottom: 50px;
 }
@@ -21036,17 +21080,15 @@ h1, .h1 {
   width: 100%;
 }
 
-.bac {
-  background-color: aqua;
-  position: relative;
-  margin-bottom: 50px;
+.sa img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
 }
-.bac img {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  left: 1082px;
-  top: -80px;
+
+.soi img {
+  width: 100%;
+  height: 100%;
 }
 
 .soa {
@@ -21058,30 +21100,128 @@ h1, .h1 {
   padding: 20px;
 }
 
-.soi img {
-  width: 100%;
-  height: 100%;
-}
-
-.s {
-  width: 100%;
-  justify-content: center;
-}
-
-.sa img {
-  height: 583px;
-}
-
 .saer {
+  display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -580px;
+}
+.saer button {
+  background: #889A72;
+  border-radius: 8px;
 }
 
 .form {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
   text-align: center;
+  border: 1px solid black;
+  padding: 50px;
+}
+
+.s {
+  align-items: center;
+}
+
+.bande {
+  background-color: rgb(91, 85, 79);
+  height: 341px;
+  width: 100%;
+  margin-top: 250px;
+}
+
+.blanc {
+  background-color: aliceblue;
+}
+
+@media screen and (max-width: 320px) {
+  .bande {
+    display: none;
+  }
+  .saer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+  }
+  .saer button {
+    background: #889A72;
+    border-radius: 8px;
+  }
+  .imgs {
+    display: none;
+  }
+  .s9 {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+}
+.s {
+  width: 100%;
+  justify-content: center;
+}
+
+.footer {
+  margin-top: 50px;
+  background-color: rgb(91, 85, 79);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 20px 0;
+}
+.footer p {
+  margin: 0;
+}
+
+.footer-bas {
+  display: flex;
+  justify-content: center;
+}
+.footer-bas h3, .footer-bas .h3 {
+  font-size: 20px;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ga {
+  margin-top: 25px;
+  display: flex;
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    margin-top: 50px;
+    background-color: rgb(91, 85, 79);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+    padding: 20px 0;
+  }
+  .footer p {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .ga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

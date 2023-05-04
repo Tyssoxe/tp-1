@@ -1,0 +1,29 @@
+.aleatoire{
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    margin-bottom: 50px;
+}
+.sa{
+    img{
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+        
+    }
+}
+.soi{
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.soa{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
